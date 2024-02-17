@@ -18,4 +18,16 @@ var imc = calcularImc(pesoInformado, alturaInformada);
 
 mostrar(`${nome} seu IMC é ${imc}`);
 
+if (imc <= 19){
+    mostrar('O seu Imc está abaixo do recomentado.');
+}
+
+if (imc >= 25.5){
+    mostrar('O seu Imc está acima do recomendado.');
+}
+
+if (imc >= 19 && imc <= 25.5){
+        mostrar('O seu imc está excelente!');
+    }
+
 </script>
